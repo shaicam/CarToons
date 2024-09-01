@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+html {
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid 2px red;
+    background-color: snow;
+}
+
+.logo {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuButton {
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 0px;
+    transition: transform 0.5s, border-radius 0.5s;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 50px;
+}
+
+#menuButton:hover {
+    transform: scale(0.9);
+    color: #ffffff;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menu {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: left 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    display: inline-block;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu li {
+    margin-right: 30px;
+}
+
+#menu a {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 10px;
+    text-decoration: none;
+    color: #2b2a2a;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+#menuToggle:checked ~ #menu {
+    left: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-bar {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(44, 44, 44);
+    margin: 8px 0;
+}
+
+.menu-label {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.casa {
+    margin-right: 5px;
+    width: 18px;
+}
+
+.carro {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.moto {
+    height: 18px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.welcome-text {
+    font-size: 55px;
+    text-align: center;
+    color: #2b2a2a;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    border-top: 10px solid #d32f2f;
+    border-bottom: 10px solid #d32f2f;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d32f2f;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Kanit", sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #d32f2f;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #b71c1c;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #d32f2f;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.radio-label:hover {
+    background-color: #e0e0e0;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border-color: #b71c1c;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+button:active {
+    background-color: #7f0000;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background-color: #d32f2f;
+    border-radius: 10px;
+}
+
+.opcoes-carro, .opcoes-moto, .opcoes-van {
+    display: none;
+}
+
+#radio-carro:checked + .radio-label + .opcoes-carro {
+    display: block;
+}
+
+#radio-moto:checked + .radio-label + .opcoes-moto {
+    display: block;
+}
+
+#radio-van:checked + .radio-label + .opcoes-van {
+    display: block;
+}
+
+
+.agradecimento {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cartoons {
+    color: #d32f2f;
+}
+
+p {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}

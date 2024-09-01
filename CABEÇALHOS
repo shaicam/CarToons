@@ -1,0 +1,34 @@
+<article>
+        <header>
+            <div class="" style="border: solid 10px black; width: 2080px; height: 90px;"> 
+                <nav class="cabeça">
+                    <button class="cabeçabut">Menu</button>
+                    <img src="" alt="">
+                    <button class="cabeçabut" >Login</button>
+                </nav>
+            </div>
+        </header>
+    </article>
+
+
+
+CSS DO CABEÇALHO 
+
+.cabeça{
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.cabeçabut{
+    height:50px ;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    transition-duration: 0.4s;
+}
+.cabeçabut:hover{
+    background-color: #ffffff; /* Green */
+    color:red;
+}

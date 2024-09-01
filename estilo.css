@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+html {
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid 2px red;
+    background-color: snow;
+}
+
+.logo {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuButton {
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 0px;
+    transition: transform 0.5s, border-radius 0.5s;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 50px;
+}
+
+#menuButton:hover {
+    transform: scale(0.9);
+    color: #ffffff;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menu {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: left 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    display: inline-block;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu li {
+    margin-right: 30px;
+}
+
+#menu a {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 10px;
+    text-decoration: none;
+    color: #2b2a2a;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+#menuToggle:checked ~ #menu {
+    left: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-bar {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(44, 44, 44);
+    margin: 8px 0;
+}
+
+.menu-label {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.casa {
+    margin-right: 5px;
+    width: 18px;
+}
+
+.carro {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.moto {
+    height: 18px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.carrossel {
+    height: 730px;
+    width: 720px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 32.2%;
+    top: 25%;
+    transform: translate(-4%, 4%);
+}
+
+.carrossel-controles {
+    position: absolute;
+    top: 670px;
+    left: 39%;
+    transform: translate(0%, -20%);
+    display: flex;
+}
+
+.carrossel-controlado {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.carrossel-controlado:hover {
+    background-color: black;
+}
+
+input {
+    display: none;
+}
+
+.carrossel-real {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.carrosselhos1 {
+    display: flex;
+    gap: 8px;
+}
+
+.carrossel-plebeu {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.carrossel-plebeu img {
+    border-radius: 20px;
+    width: 716px;
+    height: 700px;
+}
+
+#crr1:checked ~ .carrosselhos1 {
+    transform: translateX(0%);
+    transition: 0.6s;
+}
+
+#crr2:checked ~ .carrosselhos1 {
+    transform: translateX(-25%);
+    transition: 0.6s;
+}
+
+#crr3:checked ~ .carrosselhos1 {
+    transform: translateX(-50%);
+    transition: 0.6s;
+}
+
+#crr4:checked ~ .carrosselhos1 {
+    transform: translateX(-75.3%);
+    transition: 0.6s;
+}
+
+.linkado {
+    text-decoration: none;
+    color: black;
+}
+
+.divNOG img {
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.divNOG {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.Logo-meio {
+    text-align: center;
+}
+
+.texto_veiculos {
+    position: relative;
+    top: -10px;
+    z-index: 1;
+}
+
+.dick {
+    position: relative;
+}
+
+.dick:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.escrita {
+    font-family: "Archivo Black", sans-serif;
+    z-index: 1;
+    font-size: 40px;
+    display: flex;
+    position: absolute;
+    left: 35%;
+    top: 230%;
+    color: red;
+}
+
+.tabela {
+    font-size: 30px;
+}
+
+footer {
+    width: 88%;
+    background-color: #F5F5F5;
+}
+
+.info {
+    border-top: solid red 2px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.infologo {
+    width: 20%;
+    text-align: center;
+}
+
+.infologo img {
+    max-width: 140px;
+}
+
+.nome {
+    z-index: 1;
+    font-size: 40px;
+    position: relative;
+    top: -105%;
+}
+
+.nome:hover {
+    font-size: 50px;
+    color: red;
+    transition: 0.7s;
+}
+
+.infologo p {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 26px;
+    color: #333;
+}
+
+.redessociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redessociais a img {
+    width: 30px;
+    height: 30px;
+}
+
+.infolinks {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infolinks .column {
+    width: 30%;
+}
+
+.infolinks .column h3 {
+    color: #E2001A;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.infolinks .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.infolinks .column ul li {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.infolinks .column ul li a {
+    text-decoration: none;
+    color: #4b4b4b;
+    font-size: 17px;
+}
+
+.infolinks .column ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(85, 85, 85);
+    color: rgb(173, 63, 63);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    margin: 0;
+    position: sticky;
+    height: 50px;
+    width: 97.88%;
+}
+
+footer img {
+    width: 100px;
+}
+
+.welcome-text {
+    font-size: 55px;
+    text-align: center;
+    color: #2b2a2a;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.CarToonss{
+    color: #E2001A;
+}
+
+.texto_veiculos {
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 35px;
+    color: #2b2a2a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.carrossel-container {
+    width: 99%;
+    height: 750px;
+}
+
+#div3 {
+    padding-left: 20px;
+    width: 30%;
+    height: 500px;
+}
+
+#div3 img {
+    width: 100%;
+}
+
+#div4 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 30%;
+    height: 500px;
+}
+
+#div4 img {
+    width: 100%;
+}
+
+.Logo-meio {
+    border: outset 2px black;
+    width: 70%;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.Logo-meio img {
+    width: 70%;
+}
+
+.seguro{
+    color: #E2001A;
+}
+
+.product-text {
+    text-align: center;
+}
+
+.branco{
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: white
+}

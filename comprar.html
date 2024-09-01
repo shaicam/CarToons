@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="comprarestilo.css">
+    <link rel="icon" href="img/carrologo.png" type="image/png">
+</head>
+<body>
+    <div class="total">
+        <article>
+            <header> 
+                <div class="cabeçalho">
+                        <input type="checkbox" id="menuToggle">
+    
+            <label for="menuToggle" id="menuButton">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <p class="menu-label">MENU</p>
+            </label>
+    
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html"><img src="img/Casaicon.png" class="casa" alt="casa"> Início</a></li>
+                    <li><a href="carros.html"><img src="img/carroicon.png" class="carro" alt="carro">Carros</a></li>
+                    <li><a href="@paginaindex.html"><img src="img/motoicon (2).png" class="moto" alt="moto">Motos & Vans</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html" target=""><img src="img/logo.png" class="logo" alt="logo">
+                </a>
+            </div>
+                    </nav>
+    
+                </div>
+            </div>
+            </header>
+            <br>
+            <h1 class="welcome-text">Faça a compra do seu  <span class="CarToonss">veículo</span> no formulário:</h1>
+
+            <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compra - Cartoons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h2>Formulário de Compra</h2>
+            <form action="/enviar" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <p>Tipo de Veículo:</p>
+                <div class="radio-group">
+                    <input type="radio" id="radio-carro" name="tipo-veiculo" value="carro" required>
+                    <label for="radio-carro" class="radio-label">Carro</label>
+                    <div class="opcoes-carro">
+                        <label for="modelo-carro">Modelo do Carro:</label>
+                        <select id="modelo-carro" name="modelo-carro">
+                            <option value="Batmovel">Batmóvel</option>
+                            <option value="Dickmovel">Dick Móvel</option>
+                            <option value="Flinstonescar">Flinstones Car</option>
+                            <option value="Francesco">Francesco</option>
+                            <option value="Sirimovel">Siri Móvel</option>
+                            <option value="Relâmpagomcqueen">Relâmpago Mcqueen</option>
+                            <option value="PenelopeSUV">Penélope SUV</option>
+                            <option value="Mariokart">Mario Kart</option>
+                        </select>
+                    </div>
+
+                    <input type="radio" id="radio-moto" name="tipo-veiculo" value="moto">
+                    <label for="radio-moto" class="radio-label">Moto</label>
+                    <div class="opcoes-moto">
+                        <label for="modelo-moto">Modelo da Moto:</label>
+                        <select id="modelo-moto" name="modelo-moto">
+                            <option value="Batmoto">Batmoto</option>
+                            <option value="Motohotwheels">Moto Hotwheels</option>
+                            <option value="Motoqueirofantasma">Motoqueiro Fantasma</option>
+                            <option value="Mototron">Moto Tron</option>
+                        </select>
+                    </div>
+
+                    <input type="radio" id="radio-van" name="tipo-veiculo" value="van">
+                    <label for="radio-van" class="radio-label">Van</label>
+                    <div class="opcoes-van">
+                        <label for="modelo-van">Modelo de Van:</label>
+                        <select id="modelo-van" name="modelo-van">
+                            <option value="Trailervomax">Trailer Vô Max</option>
+                            <option value="scoobydoo">Van Mistério Scooby Doo</option>
+                            <option value="Trailertitioavo">Trailer Titio Avô</option>
+                            <option value="Fillmore">Fillmore</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+    <p class="agradecimento">A <span class="cartoons">CarToons</span> agradece pela preferência!</p>
+
+</div>
+</body>
+</html>
